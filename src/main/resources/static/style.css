@@ -1,0 +1,111 @@
+/* --- Grundlayout --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e6f2ef, #dfe8f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #2a2a2a;
+}
+
+/* --- Zentrale Container --- */
+.container {
+    background-color: #ffffff;
+    padding: 2.5em 3em;
+    border-radius: 1em;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* --- Überschriften --- */
+h1 {
+    color: #1f5f74;
+    margin-bottom: 1em;
+}
+
+/* --- Formular --- */
+.form-group {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6em;
+    border: 1px solid #a6c4c1;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f9fdfd;
+}
+
+/* --- Buttons --- */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+    background-color: #3b9e84; /* sanftes Grün */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e866f;
+    transform: scale(1.03);
+}
+
+.btn-secondary {
+    background-color: #3f7eb7; /* sanftes Blau */
+    color: white;
+    margin-top: 1em;
+}
+
+.btn-secondary:hover {
+    background-color: #356f9e;
+    transform: scale(1.03);
+}
+
+/* --- Ergebnis-Ansicht --- */
+.result-card table {
+    width: 100%;
+    margin-bottom: 1.5em;
+    border-collapse: collapse;
+}
+
+.result-card th {
+    text-align: left;
+    color: #1f5f74;
+    padding-right: 0.8em;
+    font-weight: 600;
+}
+
+.result-card td {
+    text-align: right;
+}
+
+.result-card .highlight {
+    background-color: #eaf6f1;
+    border-top: 2px solid #3b9e84;
+    border-bottom: 2px solid #3b9e84;
+}
+
+@media (max-width: 500px) {
+    .container { padding: 1.5em; }
+}

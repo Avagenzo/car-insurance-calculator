@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Versicherungsprämie berechnen</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h1>Prämienrechner</h1>
+    <form th:action="@{/calculate}" th:object="${quoteRequest}" method="post" class="form-card">
+        <div class="form-group">
+            <label>Jahreskilometer:</label>
+            <input type="number" th:field="*{jahresKilometer}" required />
+        </div>
+
+        <div class="form-group">
+            <label>Fahrzeugtyp:</label>
+            <select th:field="*{fahrzeugtyp}">
+                <option value="KLEINWAGEN">Kleinwagen</option>
+                <option value="MITTELKLASSE">Mittelklasse</option>
+                <option value="SUV">SUV</option>
+                <option value="TRANSPORTER">Transporter</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Postleitzahl:</label>
+            <input type="text" th:field="*{postleitzahl}" required />
+        </div>
+
+        <button type="submit" class="btn-primary">Berechnen</button>
+    </form>
+</div>
+</body>
+</html>

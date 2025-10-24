@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Berechnungsergebnis</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container result-card">
+    <h1>Berechnete Versicherungsprämie</h1>
+    <table>
+        <tr><th>Fahrzeugtyp:</th><td th:text="${quote.fahrzeugtyp}"></td></tr>
+        <tr><th>Postleitzahl:</th><td th:text="${quote.postleitzahl}"></td></tr>
+        <tr><th>Jahreskilometer:</th><td th:text="${quote.jahresKilometer}"></td></tr>
+        <tr class="highlight"><th>Prämie:</th><td th:text="${quote.praemie}"></td></tr>
+    </table>
+
+    <a th:href="@{/}" class="btn-secondary">Neue Berechnung</a>
+</div>
+</body>
+</html>
