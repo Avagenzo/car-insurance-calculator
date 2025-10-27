@@ -1,0 +1,20 @@
+site_name: Insurance Premium Calculator
+site_description: Spring Boot + Thymeleaf application for car insurance premium calculation
+site_author: Johann Martens
+use_directory_urls: false
+repo_url: https://github.com/Avagenzo/car-insurance-calculator
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: blue
+  features:
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - content.code.copy
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+  - Modules: modules.md
+  - API: api.md
