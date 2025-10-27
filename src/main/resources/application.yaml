@@ -17,7 +17,8 @@ app:
       DE_MV: 1.0
       DE_SL: 1.0
 server:
-  port: 8080
+  port: ${PORT:8080}
+  address: 0.0.0.0
 spring:
   datasource:
     url: jdbc:h2:file:./data/insurance-db
