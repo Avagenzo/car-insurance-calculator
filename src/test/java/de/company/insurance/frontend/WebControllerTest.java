@@ -1,4 +1,4 @@
-package frontend;
+package de.company.insurance.frontend;
 
 import de.company.insurance.CarInsuranceCalculatorApplication;
 import org.junit.jupiter.api.Test;

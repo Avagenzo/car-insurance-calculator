@@ -1,4 +1,4 @@
-package region;
+package de.company.insurance.region;
 
 import de.company.insurance.region.RegionProperties;
 import de.company.insurance.region.RegionRepository;

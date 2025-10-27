@@ -1,4 +1,4 @@
-package quote;
+package de.company.insurance.quote;
 
 import de.company.insurance.CarInsuranceCalculatorApplication;
 import org.junit.jupiter.api.Test;

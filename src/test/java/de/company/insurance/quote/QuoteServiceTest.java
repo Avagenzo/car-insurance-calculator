@@ -1,4 +1,4 @@
-package quote;
+package de.company.insurance.quote;
 
 import de.company.insurance.quote.Quote;
 import de.company.insurance.quote.QuoteRepository;

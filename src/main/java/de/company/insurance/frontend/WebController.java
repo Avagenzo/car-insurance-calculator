@@ -28,4 +28,9 @@ public class WebController {
         model.addAttribute("quote", quote);
         return "result";
     }
+
+    @GetMapping("/docs")
+    public String docs() {
+        return "redirect:/docs/index.html";
+    }
 }
