@@ -16,9 +16,5 @@ public class QuoteController {
         return service.calculateAndSave(req);
     }
 
-//    @GetMapping
-//    public java.util.List<Quote> all() {
-//        return service.getAll();
-//    }
 }
 
